@@ -11,7 +11,7 @@ library(dplyr)
 library(leaflet)
 library(tidyr)
 
-data <- readr::read_csv("/Users/ondrejklubal/Documents/Osobní/R/Shiny/Odběrová místa očkování ČR/www/prehled-odberovych-mist.csv")
+data <- readr::read_csv("your_working_directory/www/prehled-odberovych-mist.csv") # place here your repository path
 data <- data %>% 
   filter(!is.na(latitude), !is.na(longitude))
 
